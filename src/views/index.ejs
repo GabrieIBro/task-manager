@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+<body>
+    <main>
+        <div id="create-task-form">
+            <h1>Task Manager</h1>
+            <div id="form-container">
+                <form id="task-form">
+                    <input type="text" name="task" placeholder="e.g Wash Dishes" id="task-input" autocomplete="off" >
+                    <button type="submit" id="create-task-submit">Submit</button>
+                </form>
+                <p id="error-field"></p>
+            </div>
+        </div>
+        <div id="task-list"></div>
+    </main>
+
+    <script src="/bundle/index-bundle.js"></script>
+</body>
+</html>

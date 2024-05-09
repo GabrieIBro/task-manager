@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/stylesheets/task.css">
+</head>
+<body>
+    <main id="<%=taskID%>">
+        <h1>Edit Task</h1>
+        <div id="main-container">
+            <div id="task-id-container">
+                <p id="task-id-label">Task ID</p>
+                <p id="task-id"><%= taskID%></p>
+            </div>
+            <div id="task-completed-container">
+                <p id="complete-label">Completed</p>
+                <input type="checkbox" id="complete-checkbox"
+                <% if(complete){%> checked <%}%> >
+            </div>
+            <textarea id="task-text-field"><%=taskText %></textarea>
+        </div>
+        <div id="buttons-container">
+            <button id="return-button">Return</button>
+            <button id="apply-button">Apply Changes</button>
+        </div>
+    </main>
+    <script src="/bundle/task-bundle.js"></script>
+</body>
+</html>
